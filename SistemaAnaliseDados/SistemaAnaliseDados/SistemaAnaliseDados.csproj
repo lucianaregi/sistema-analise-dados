@@ -114,6 +114,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ClientService.cs" />
     <Compile Include="Services\GetFilesDirectoryService.cs" />
+    <Compile Include="Services\ProcessFilesService.cs" />
     <Compile Include="Services\SaleService.cs" />
     <Compile Include="Services\SellerService.cs" />
   </ItemGroup>

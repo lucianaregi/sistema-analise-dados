@@ -9,6 +9,6 @@ namespace SistemaAnaliseDados.Models
     {
         public int SaleOrderItemId { get; set; }
         public int Qty { get; set; }
-        public decimal Price { get; set; }
+        public float Price { get; set; }
     }
 }

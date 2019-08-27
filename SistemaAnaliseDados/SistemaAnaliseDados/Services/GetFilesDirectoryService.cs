@@ -27,5 +27,9 @@ namespace SistemaAnaliseDados.Services
             IEnumerable<string> filelocations = Directory.GetFiles(sourceDirectory, "003*", SearchOption.AllDirectories).Select(x => Path.GetFileNameWithoutExtension(x));
             return filelocations;
         }
+        public static int CountFiles()
+        {
+            return Directory.GetFiles(sourceDirectory).Length;
+        }
     }
 }

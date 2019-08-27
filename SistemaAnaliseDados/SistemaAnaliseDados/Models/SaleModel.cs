@@ -10,5 +10,6 @@ namespace SistemaAnaliseDados.Models
         public int OrderId { get; set; }
         public string SellerName { get; set; }
         public ICollection<SaleOrderItemModel> SaleItems { get; set; }
+        public float SumSales { get; set; }
     }
 }

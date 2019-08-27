@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaAnaliseDados.Services;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,7 +23,12 @@ namespace SistemaAnaliseDados.App_Start
 
         static void OnCreated(object sender, FileSystemEventArgs e)
         {
-           
+            if (e.ChangeType == WatcherChangeTypes.Created)
+            {
+                    ProcessFilesService file = new ProcessFilesService();
+                    file.WriteFile();
+            }
+
         }
     }
 }
